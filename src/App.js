@@ -5,7 +5,9 @@ export const App = ()=>{
   return(
     <div>
       <Header/>
-      <Episodios/>
+      <div className="cuerpo">
+        <Episodios/>
+      </div>
     </div>
   )
 }
