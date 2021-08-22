@@ -1,20 +1,22 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { Episodios } from "../components/Episodios"
+import { Estrenos } from '../components/Home/Estrenos';
 import { Home } from '../components/Home/Home';
+import { Inside } from '../components/Home/Inside';
 import { MenuOnline } from '../components/Menu-Online';
-import { Ultimas } from '../components/Ultimas';
 
 export const DashboarHome = ()=>{
     return(
         <>
             <Episodios/>
             <MenuOnline/>
-            <div className="dashboard"> 
+            <div className="contenido_home">
                 <Switch>
                     <Route exact path="/home" component={ Home }></Route>
-                    <Route exact path="/ultima" component={ Ultimas }></Route>
+                    <Route exact path="/estrenos" component={ Estrenos } ></Route>
                     <Redirect to="/home" />
                 </Switch>
+                <Inside/>
             </div>
         </>
     )

@@ -174,13 +174,6 @@ body{
     font-size: 15px;
 }
 
-
-/************ home ***********/
-
-.home{
-    padding: 0px 8rem 0px 8rem;
-}
-
 /***** MenuOnline  ***********/
 .menuonline{
     padding: 0px 8rem 0px 8rem;
@@ -196,13 +189,21 @@ body{
     font-weight: bold;
 }
 
-/********* Section  **********/
-.section{
+
+/************ home ***********/
+.contenido_home{
+    display: flex;
+    margin: 0px 8rem 0px 8rem;
+}
+.home_content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 70%;
-    /* background-color: red; */
+}
+.inside{
+    padding: 10px;
+    width: 30%;
 }
 
 /****** CARD ******/
@@ -230,6 +231,130 @@ body{
 .tarjeta__texto > label{
     display: inline;
     color: white;
+}
+.inside__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    color: rgb(136, 130, 130);
+    background-color:#363232;
+    font-weight: bold;
+    font-size: 18px;
+}
+.row_card{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.row_card > img{
+    height: 150px;
+    width: 100px;
+    object-fit: cover;
+    margin: 10px 1rem 0px 10px;
+    border-radius: 10px;
+}
+.row__content{
+    width: 100%;
+}
+.row__content > p{
+    font-size: 20px;
+}
+.row__content > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row__content div >p{
+    color: rgb(247, 193, 19);
+    margin: 0;
+    padding: 0;
+}
+.row__content div small{
+    color: rgb(177, 162, 162);
+}
+.row__content div small span{
+    background-color: rgb(247, 193, 19);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    width: 50px;
+}
+
+
+/********** Detalle ************/
+.detalle{
+    display: flex;
+    padding: 1rem;
+}
+.detalle > img{
+    border-radius: 10px;
+    height: 500px;
+}
+.detalle > img:hover{
+    transform: scale(1.09);
+}
+.detalle__content{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.detalle__content > h1{
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+.detalle__redes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.detalle__duracion > small:nth-child(1){
+    margin-right: 1rem;
+}
+.detalle__duracion > small > span{
+    background-color: rgb(247, 193, 19);
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0px 4px 0px 4px;
+}
+.detalle__compartir{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.detalle__compartir > small{
+    display: flex;
+    align-items: center;
+}
+.detalle__content small .MuiSvgIcon-root{
+    color: yellow;
+}
+.detalle__compartir .icon{
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+.detalle__compartir .facebook{
+    background-color: #2049bb;
+}
+.detalle__compartir .twitter{
+    background-color: #00bcff;
+}
+.detalle__texto{
+    color: gray;
+    text-align: left;
+    margin-bottom: 2rem;    
+}
+.detalle__datos{
+    display: flex;
+    flex-direction: column;
+}
+.detalle__datos > label{
+    color: gray;
 }
 
 

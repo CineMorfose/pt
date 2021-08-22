@@ -4,10 +4,10 @@ import { types } from "../types/types";
 export const AuthReducer = (state = {},action)=>{
     switch(action.type){
         
-        case types.login:
+        case types.SetDetalle:
             return {
-                ...action.payload,
-                logged:true
+                ...state,
+                detalle:true
             }
         case types.logout:
             return{

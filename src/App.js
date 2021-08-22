@@ -7,11 +7,13 @@ import { AppRouter } from "./routes/AppRouter";
 
 const init = ()=>{
   return {
-    logged:false
+    detalle:false,
+    peliculaId:null
   }
 }
 
 export const App = ()=>{
+
   const[user,dispatch ] =  useReducer(AuthReducer,{},init);
 
   return(

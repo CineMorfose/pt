@@ -4,6 +4,7 @@ import {
     Switch,
     Route
   } from "react-router-dom";
+import { Detalle } from '../components/Detalle';
 import { DashboarHome } from './DashboarHome';
 
   export const AppRouter = ()=>{
@@ -12,6 +13,7 @@ import { DashboarHome } from './DashboarHome';
               <Router>
                   <div>
                       <Switch>
+                          <Route exact path="/detalle" component={ Detalle }></Route>
                           <Route path="/" component={ DashboarHome }></Route>
                       </Switch>
                   </div>
