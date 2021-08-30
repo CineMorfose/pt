@@ -3,6 +3,7 @@ import { Episodios } from "../components/Episodios"
 import { Estrenos } from '../components/Home/Estrenos';
 import { Home } from '../components/Home/Home';
 import { Inside } from '../components/Home/Inside';
+import { Ranking } from '../components/Home/Ranking';
 import { MenuOnline } from '../components/Menu-Online';
 
 export const DashboarHome = ()=>{
@@ -14,6 +15,7 @@ export const DashboarHome = ()=>{
                 <Switch>
                     <Route exact path="/home" component={ Home }></Route>
                     <Route exact path="/estrenos" component={ Estrenos } ></Route>
+                    <Route exact path="/ranking" component={ Ranking }></Route>
                     <Redirect to="/home" />
                 </Switch>
                 <Inside/>

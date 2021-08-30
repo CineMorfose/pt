@@ -6,7 +6,7 @@ export const AuthReducer = (state = {},action)=>{
         
         case types.SetDetalle:
             return {
-                ...state,
+                ...action.payload,
                 detalle:true
             }
         case types.logout:

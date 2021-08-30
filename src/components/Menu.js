@@ -17,7 +17,7 @@ export const Menu = ()=>{
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <Link className="nav-link">Inicio <span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="home">Inicio <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

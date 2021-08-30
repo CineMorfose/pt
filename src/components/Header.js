@@ -1,15 +1,38 @@
 import '../estilos/style.css';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import { Menu } from './Menu';
+import { useEffect, useState } from 'react';
+import { getTopRated } from '../helpers/peticiones';
 
 
 export const Header = ()=>{
 
+    const[movie,setMovies ] = useState();
+
+    useEffect( ()=>{
+        async function fetchData(){
+            const respuesta = await getTopRated().then(res => res);
+            setMovies(
+                respuesta[
+                    Math.floor(Math.random() * respuesta.length-1)
+                ]
+            )
+            return respuesta;
+        }
+        fetchData();
+    },[]);
+
     return(
-        <div className="header">
+        <div className="header" 
+            style={{
+                ackgroundSize:"cover",
+                backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.path}")`,
+                backgroundPosition:"center center"
+            }}
+        >
             <Menu/>
             <div className="header__title">
-                <h1>Jungle cuise</h1>
+                <h1>{movie.title}</h1>
                 <span>pelicula</span>
             </div>
             <div className="header__hora">
@@ -17,10 +40,7 @@ export const Header = ()=>{
                 <p>1h 50m 2021</p>
                 <span>HD</span>
             </div>
-            <p className="header__texto">Film ambientado a principios del siglo XX. Frank (Interpretado por Dwayne Johnson) 
-                es el carismático capitán de una peculiar embarcación que recorre la selva amazónica. 
-                Allí, a pesar de los peligros que el río Amazonas les tiene preparados, Frank llevará en su barco a la científica Lily Houghton 
-                (Interpretada por Emily Blunt) y a su hermano McGregor Houghton (Interpretado por Jack Whitehall).</p>
+            <p className="header__texto">{movie.overview}</p>
             <div className="header__button">
                 <PlayArrowIcon/>
                 <button>Ver pelicula</button>

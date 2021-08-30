@@ -17,8 +17,7 @@ export const MenuOnline = ()=>{
                             <Link className="nav-link" to="estrenos">ESTRENOS</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="ranking">RANKING</Link>vnbvvASDFGHJKLÑIOP´
-                            
+                            <Link className="nav-link" to="ranking">RANKING</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="masvistas">MAS VISTAS</Link>
