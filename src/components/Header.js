@@ -2,16 +2,15 @@ import '../estilos/style.css';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import { Menu } from './Menu';
 import { useEffect, useState } from 'react';
-import { getTopRated } from '../helpers/peticiones';
+import { getGeneroRanking } from '../helpers/peticiones';
 
 
 export const Header = ()=>{
 
-    const[movie,setMovies ] = useState();
-
+    const[movie,setMovies ] = useState([]);
     useEffect( ()=>{
         async function fetchData(){
-            const respuesta = await getTopRated().then(res => res);
+            const respuesta = await getGeneroRanking().then(res => res);
             setMovies(
                 respuesta[
                     Math.floor(Math.random() * respuesta.length-1)

@@ -1,22 +1,20 @@
+import { useEffect, useState } from "react";
+import { getGenero } from "../helpers/peticiones";
+import { Tarjeta } from "./Home/Tarjeta";
 
-import { useEffect, useState } from "react"
-import { getGeneroRanking } from "../../helpers/peticiones";
-import { Tarjeta } from "./Tarjeta"
+export const Drama = ({history})=>{
+    const[ dramas,setDramas ] = useState([]);
 
-export const Ranking = ({history})=>{
-
-    const[ ranking,setRanking ] = useState([]);
-
-    useEffect( ()=>{
-        getGeneroRanking().then( ranki =>{
-            setRanking(ranki);
+    useEffect(()=>{
+        getGenero(18).then(res=>{
+            setDramas(res);
         });
-    },[]);
-
+    });    
+     
     return(
         <div className="home_content">
             {
-                ranking.map( (movie)=>(
+                dramas.map( (movie)=>(
                     <Tarjeta 
                         key={movie.id }
                         movieId={ movie.id}

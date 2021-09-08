@@ -25,10 +25,10 @@ export const Menu = ()=>{
                             </Link>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <Link className="dropdown-item">Accion</Link>
-                                <Link className="dropdown-item">Aventura</Link>
-                                <Link className="dropdown-item">Comedia</Link>
-                                <Link className="dropdown-item">Romance</Link>
-                                <Link className="dropdown-item">Drama</Link>
+                                <Link className="dropdown-item" to='/aventura'>Aventura</Link>
+                                <Link className="dropdown-item" to='/comedia'>Comedia</Link>
+                                <Link className="dropdown-item" to='/romance'>Romance</Link>
+                                <Link className="dropdown-item" to='/drama'>Drama</Link>
                             </div>
                         </li>
                         <li className="nav-item dropdown">

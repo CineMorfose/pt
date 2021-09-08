@@ -149,6 +149,8 @@ body{
 .episodios__rigth{
     display: flex;
     flex-direction: row;
+    width: 92%;
+    overflow-x: clip;
 }
 .episodio{
     width: 25%;
@@ -202,6 +204,8 @@ body{
     width: 70%;
 }
 .inside{
+    height: 900px;
+    overflow-y: scroll;
     padding: 10px;
     width: 30%;
 }

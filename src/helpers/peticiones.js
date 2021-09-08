@@ -77,25 +77,6 @@ export const getComentarios = async(id) =>{
     return comentarios;
 }
 
-export const getTopRated = async() =>{
-    const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=es=US`;
-    const resp = await fetch(url);
-    const { results } = await resp.json();
-
-    const rated = results.map( gne =>{
-        return{
-            id:gne.id,
-            path:gne.backdrop_path,
-            title:gne.original_title,
-            overview:gne.overview,
-            popularity:gne.popularity,
-            poster_path:gne.poster_path,
-            date:gne.release_date
-        }
-    })
-    return rated;
-}
-
 export const getMovieID = async(id) =>{
     const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`;
     const resp = await fetch(url);
