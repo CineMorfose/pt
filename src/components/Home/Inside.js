@@ -12,8 +12,6 @@ export const Inside =()=>{
         });
     },[]);
 
-    console.log(estrenos);
-
     return(
         <div className="inside">
             <div className="inside__top">

@@ -10,7 +10,7 @@ export const DashboarHome = ()=>{
     return(
         <>
             <Episodios/>
-            <MenuOnline/>
+            {/* <MenuOnline/> */}
             <div className="contenido_home">
                 <Switch>
                     <Route exact path="/home" component={ Home }></Route>
@@ -18,7 +18,7 @@ export const DashboarHome = ()=>{
                     <Route exact path="/ranking" component={ Ranking }></Route>
                     <Redirect to="/home" />
                 </Switch>
-                <Inside/>
+                {/* <Inside/> */}
             </div>
         </>
     )

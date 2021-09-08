@@ -52,14 +52,14 @@ export const Menu = ()=>{
                         </li>
                     </ul>
                 </div>
-                    <div className="menu__left">
-                        <div className="menu__buscar">
-                            <input type="text" placeholder="Buscar peliculas..." />
-                            <SearchIcon/>
-                        </div>
-                        <p>Entrar</p>
-                        <button className="btn btn-primary">Registro</button>
+                <div className="menu__left">
+                    <div className="menu__buscar">
+                        <input type="text" placeholder="Buscar peliculas..." />
+                        <SearchIcon/>
                     </div>
+                    <p>Entrar</p>
+                    <button className="btn btn-primary">Registro</button>
+                </div>
             </nav>
         </div>
     )

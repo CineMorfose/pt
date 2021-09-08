@@ -13,8 +13,6 @@ export const Episodios = ()=>{
         });
     },[]);
 
-    console.log(episodios);
-
     return(
         <div className="episodios">
             <div className="episodios__letf">
@@ -25,10 +23,11 @@ export const Episodios = ()=>{
                 {
                     episodios.map(movie=>(
                         <Episodio 
+                            key={movie.id}
                             imagen={`${base_url}${movie.path}`}
                             titulo={movie.title}
                             numero="1x20"
-                            fecha="2018-01-01"
+                            fecha="2021-01-01"
                         />
                     ))
                 }
