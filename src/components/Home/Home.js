@@ -15,7 +15,7 @@ export const Home = ({history})=>{
     
     return(
         <div className="home_content">
-            {/* {
+            {
                 ultimas.map( (movie)=>(
                     <Tarjeta
                         key={ movie.id }
@@ -25,7 +25,7 @@ export const Home = ({history})=>{
                         anio={ movie.date }
                         title={ movie.title }/>
                 ))
-            } */}
+            }
         </div>
     )
 }

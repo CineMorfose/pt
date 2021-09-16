@@ -159,7 +159,6 @@ body{
 .episodio__card{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 .episodio__card > img{
     height: 150px;
@@ -180,6 +179,13 @@ body{
 .menuonline{
     padding: 0px 8rem 0px 8rem;
     margin-top: 150px;
+}
+.menuonline .online{
+    display: flex;
+}
+.menuonline .online > div > ul{
+    display: flex;
+    flex-direction: row;
 }
 
 .menuonline .navbar-brand{
@@ -438,25 +444,65 @@ body{
 
 @media screen and (max-width:426px){
     .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
-    .header__title{
-        display: flex;
-        width: 200px;
-        justify-content: space-between;
-    }
-    .header__title > h1{
-        font-size: 16px;
-    }
-    .header >p{
-        font-size: 10px;
-        width: 350px;
-    }
-    
     .menu{
         display: none;
+    }
+    .episodios{
+        padding: 5px;
+    }
+    .episodios__rigth{
+        width: 100%;
+    }
+    .episodio__card > small{
+        display: none;
+    }
+    .episodio__card > img:hover{
+        transform: scale(1.05);
+    }
+
+    .menuonline{
+        padding: 0;
+    }
+    .menuonline .online{
+        display: flex;
+        flex-direction: column;
+    }
+    .menuonline .online ul{
+        padding: 0; 
+    }
+    .contenido_home{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .home_content{
+        width: 100%;
+    }
+    .tarjeta{
+        width: 47%;
+    }
+    .inside{
+        width: 100%;
+    }
+    .detalle{
+        display: flex;
+        flex-direction: column;
+    }
+    .detalle__redes{
+        display: flex;
+        flex-direction: column;
+    }
+    .detalle__compartir{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .detalle_lista{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
     

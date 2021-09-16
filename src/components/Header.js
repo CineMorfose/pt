@@ -24,7 +24,7 @@ export const Header = ()=>{
     return(
         <div className="header" 
             style={{
-                ackgroundSize:"cover",
+                backgroundSize:"cover",
                 backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.path}")`,
                 backgroundPosition:"center center"
             }}

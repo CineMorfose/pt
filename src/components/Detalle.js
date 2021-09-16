@@ -17,8 +17,13 @@ export const Detalle = ({history})=>{
     const[ comentarios,setComentarios ] = useState([]);
 
     const{ user } = useContext(AuthContext);
-    const{ data } = user;
+    const{ data,detalle } = user;
     const{id,title,poster_path,overview,genres,production_companies,production_countries,spoken_languages} = data;
+
+    if(!detalle){
+        history.push('/home');
+        console.log("detalle");
+    }
 
     useEffect( ()=>{
         getMoviesSimilares(id).then(res=>{
