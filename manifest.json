@@ -1,0 +1,51 @@
+{
+    "name": "Cuevana 3",
+    "short_name": "Cuevana",
+    "description": "Películas, series y animes gratis",
+    "icons": [
+        {
+            "src": "https://cuevana.pro/image/favicon/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cuevana.pro/image/favicon/mstile-150x150.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cuevana.pro/image/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cuevana.pro/image/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cuevana.pro/image/favicon/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "https://cuevana.pro/image/installing-pwa.png",
+            "sizes": "1700x720",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "https://cuevana.pro/image/screenshot.png",
+            "sizes": "3040x1502",
+            "type": "image/png"
+        }
+    ],
+    "id": "/?utm_source=homescreen",
+    "start_url": "/?utm_source=homescreen",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#141a32",
+    "background_color": "#141a32"
+}
